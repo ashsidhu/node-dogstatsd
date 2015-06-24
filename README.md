@@ -1,4 +1,4 @@
-# node-dogstatsd
+# node-dogstatsd-events
 
 A node.js client for extended StatsD server of [Datadog](http://www.datadoghq.com).
 
@@ -10,9 +10,9 @@ I just added few lines to support datadog's histogram and tags features.
 
 The name of the package is changed because this isn't really statsd client and should be able to be used with original statsd client.
 
-    % npm install node-dogstatsd
+    % npm install node-dogstatsd-events
     % node
-    > var StatsD = require('node-dogstatsd').StatsD
+    > var StatsD = require('node-dogstatsd-events').StatsD
     > c = new StatsD('example.org',8125)
     { host: 'example.org', port: 8125 }
     > c.increment('node_test.int')
@@ -23,7 +23,7 @@ The name of the package is changed because this isn't really statsd client and s
 
 ## License
 
-node-statsd is licensed under the MIT license.
+node-dogstatsd-events is licensed under the MIT license.
 
 ## Error handling policy
 
